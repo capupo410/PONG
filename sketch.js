@@ -5,7 +5,7 @@ let diametro = 20;
 let raio = diametro / 2;
 
 //variáveis do oponente
-let xRaqueteOponente = 585;
+let xCamilaMarota = 585;
 let yRaqueteOponente = 150;
 
 //velocidade da bolinha
@@ -31,19 +31,19 @@ function setup() {
 
 function draw() {
     background(0);
-    mostraBolinha();
+    mostraBolao();
     movimentaBolinha();
     verificaColisaoBorda();
     mostraRaquete(xRaquete, yRaquete);
     movimentaMinhaRaquete();
     verificaColisaoRaquete(xRaquete, yRaquete);
-    verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);
-    mostraRaquete(xRaqueteOponente, yRaqueteOponente);
+    verificaColisaoRaquete(xCamilaMarota, yRaqueteOponente);
+    mostraRaquete(xCamilaMarota, yRaqueteOponente);
     movimentaRaqueteOponente();
     incluiPlacar() 
     marcaPonto();
 }
-function mostraBolinha() {
+function mostraBolao {
   circle(xBolinha, yBolinha, diametro);
 }
 
